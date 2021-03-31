@@ -150,10 +150,10 @@ public class formlogin extends javax.swing.JFrame {
             ps.setString(2,password);
             rs = ps.executeQuery();
             if(rs.next()){
-                JOptionPane.showMessageDialog(null,"Chao admin");
+                JOptionPane.showMessageDialog(null,"Đăng nhập thành công");
             }
             else{
-                JOptionPane.showMessageDialog(null,"NO");
+                JOptionPane.showMessageDialog(null,"Vui lòng nhập đúng thông tin");
             }
         } catch (SQLException ex) {
             java.util.logging.Logger.getLogger(formlogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
